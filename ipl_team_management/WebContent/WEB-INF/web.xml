@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>ipl_team_management</display-name>
+  <welcome-file-list>
+    <welcome-file>ScheduleMatch.html</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+    <servlet-name>schedulerServlet</servlet-name>
+    <servlet-class>com.xworkz.ipl.servlet.SchedulerServlet</servlet-class>
+    <load-on-startup>3</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+    <servlet-name>schedulerServlet</servlet-name>
+    <url-pattern>/schedulerServlet</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
